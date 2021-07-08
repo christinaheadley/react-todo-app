@@ -1,13 +1,17 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Footer from "./components/Footer";
+import MainContent from "./components/MainContent";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <ul>
-      <li>Walk cat</li>
-      <li>do laundry</li>
-      <li>break window</li>
-    </ul>
+    <div>
+      {/* <Navbar /> */}
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
   );
 }
 
