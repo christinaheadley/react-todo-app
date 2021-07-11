@@ -2,19 +2,12 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import TodoItem from "./components/TodoItem";
+import todosData from "./todosData";
 import Header from "./components/Header";
 
 function App() {
-  return (
-    <div className="todo-list">
-      <Header />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <Footer />
-    </div>
-  );
+  const todoItems = todosData.map((item) => <TodoItem key={item.id} item={item} />);
+  return <div className="todo-list">{todoItems}</div>;
 }
 
 // examples of how to include dynamic JS
