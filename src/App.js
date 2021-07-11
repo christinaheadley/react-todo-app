@@ -1,9 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Footer from "./components/Footer";
 import TodoItem from "./components/TodoItem";
 import todosData from "./todosData";
-import Header from "./components/Header";
 
 function App() {
   const todoItems = todosData.map((item) => <TodoItem key={item.id} item={item} />);
